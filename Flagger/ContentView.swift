@@ -21,9 +21,17 @@ struct ContentView: View {
             LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
             VStack{
                 VStack (spacing: 40) {
-                    Text("Guess the country.").font(.callout).foregroundColor(.white)
-                    Text(countries[correctAnswer]).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.white)
-            }
+                    Text("Guess the country.").font(.callout)
+                    Text(countries[correctAnswer]).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                }
+                    .padding(.horizontal, 100)
+                    .padding(.vertical, 30)
+                
+                    .background(Color.white)
+                    .cornerRadius(10.0)
+                    
+
+                
             
                 Spacer()
                 VStack (spacing: 30){
